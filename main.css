@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/* 
+    Author: Chad Williams
+    Date: 11/1/18
+    Purpose: Main CSS for My Portfolio Index.
+*/
+
+@font-face {
+    font-family: "overpass";
+    src: url('./overpass/overpass-bold.otf')
+}
+
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+/* font-family: 'Arimo', sans-serif; */
+
+/* Structural Styles */
+body {
+    background-color: antiquewhite;
+    font-family: 'Arimo', sans-serif;
+}
+
+
+/* Intro Styles */
+#intro {
+    background-color: antiquewhite;
+    min-height: 750px;
+}
+
+/* Header Styles */
+header {
+    width: 72%;
+    float: right;
+    height: 100%;
+}
+
+header h1 {
+    position: absolute;
+    font-size: 9.6em;
+    margin: 0px;
+    display: block;
+}
+
+h1 {
+    width: 50%;
+}
+
+h1 span {
+    width: 100%;
+    font-family: 'Overpass', sans-serif;
+}
+
+#span2 {
+    text-align: right;
+    float: right;
+}
+
+/* Nav Styles */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    width: 28%;
+    height: 100%;
+    padding: 3%;
+    overflow: hidden;
+}
+
+nav a {
+    display: block;
+    width: 20%;
+    text-decoration: none;
+    color: black;
+    font-size: 1.4em;
+    line-height: 30px;
+}
+
+nav a:hover,
+nav a:active {
+    text-decoration: underline;
+}
+
+#maincontent {
+    clear: both;
+    width: 72%;
+    float: right;
+}
+
+/* Work Styles */
+#work {
+    clear: both;
+}
+
+/* About Styles */
+#about {
+    clear: both;
+}
