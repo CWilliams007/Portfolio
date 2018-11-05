@@ -20,6 +20,15 @@ body {
     font-family: 'Arimo', sans-serif;
 }
 
+/* End Structural Styles */
+/* Main Content Structure */
+#maincontent {
+    clear: both;
+    width: 72%;
+    float: right;
+}
+
+/* End Main Content Structure */
 
 /* Intro Styles */
 #intro {
@@ -27,18 +36,22 @@ body {
     min-height: 750px;
 }
 
+/* End Intro Styles */
 /* Header Styles */
 header {
     width: 72%;
     float: right;
     height: 100%;
+    box-shadow: rgb(51, 51, 51) 10px 0px 30px;
 }
 
 header h1 {
     position: absolute;
-    font-size: 9.6em;
+    font-size: 9.8em;
     margin: 0px;
     display: block;
+    text-transform: uppercase;
+    width: 72%;
 }
 
 h1 {
@@ -48,12 +61,15 @@ h1 {
 h1 span {
     width: 100%;
     font-family: 'Overpass', sans-serif;
+    height: 100%;
 }
 
 #span2 {
     text-align: right;
     float: right;
 }
+
+/* End Header Styles */
 
 /* Nav Styles */
 .sticky {
@@ -67,34 +83,34 @@ nav {
     height: 100%;
     padding: 3%;
     overflow: hidden;
+    padding-top: 20%;
 }
 
 nav a {
     display: block;
-    width: 20%;
+    width: 8%;
     text-decoration: none;
     color: black;
     font-size: 1.4em;
     line-height: 30px;
 }
 
-nav a:hover,
+/* No longer needed thanks to nav animation in linkhover.css */
+/* nav a:hover,
 nav a:active {
     text-decoration: underline;
-}
-
-#maincontent {
-    clear: both;
-    width: 72%;
-    float: right;
-}
-
-/* Work Styles */
-#work {
-    clear: both;
-}
+} */
+/* End Nav Styles */
 
 /* About Styles */
 #about {
     clear: both;
 }
+
+/* End About Styles */
+/* Work Styles */
+#work {
+    clear: both;
+}
+
+/* End Work Styles */
