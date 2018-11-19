@@ -1,17 +1,18 @@
 @charset "utf-8";
 
 
-a {
+a.linkhover {
     font-size: 20px;
     color: #584E4A;
     position: relative;
-    text-transform: none;
+    text-transform: uppercase;
     text-decoration: none;
     padding-bottom: 8px;
+    width: 40%;
 }
 
-a:before,
-a:after {
+a.linkhover:before,
+a.linkhover:after {
     content: '';
     position: absolute;
     bottom: 2px;
@@ -21,7 +22,7 @@ a:after {
     background-color: #F37272;
 }
 
-a:before {
+a.linkhover:before {
     opacity: 0;
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
@@ -30,7 +31,7 @@ a:before {
     transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-a:after {
+a.linkhover:after {
     opacity: 0;
     -webkit-transform: translateY(4px);
     transform: translateY(4px);
@@ -39,24 +40,24 @@ a:after {
     transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-a:hover:before,
-a:hover:after,
-a:focus:before,
-a:focus:after {
+a.linkhover:hover:before,
+a.linkhover:hover:after,
+a.linkhover:focus:before,
+a.linkhover:focus:after {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
 }
 
-a:hover:before,
-a:focus:before {
+a.linkhover:hover:before,
+a.linkhover:focus:before {
     transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
     transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-a:hover:after,
-a:focus:after {
+a.linkhover:hover:after,
+a.linkhover:focus:after {
     transition: opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
     transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
