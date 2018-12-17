@@ -12,16 +12,20 @@
     <title>Infinity Industries</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="linkhover.css">
+    <link rel="stylesheet" href="main.js">
+    <link rel="stylesheet" href="slideshow.css">
 </head>
 
 <body>
     <!-- Header/First page,  -->
     <article id="intro">
         <header>
-            <h1>
+            <h1 id="introheader">
                 <span id="span1">Portfolio</span>
                 <span id="span2">From</span>
                 <br>
@@ -29,6 +33,18 @@
                 <span id="span4">Arizona</span>
             </h1>
         </header>
+
+        <!--       
+            Social Media Character Classes
+            
+             <div id="socialmedia">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+             </div> 
+            -->
+
+
 
         <nav class="sticky">
             <a class="linkhover" href="#">About</a>
@@ -51,7 +67,102 @@
             </div>
         </div>
 
+        <div class="wrapper">
+            <input checked type=radio name="slider" id="slide1" />
+            <input type=radio name="slider" id="slide2" />
+            <input type=radio name="slider" id="slide3" />
+            <input type=radio name="slider" id="slide4" />
+            <input type=radio name="slider" id="slide5" />
 
+            <div class="slider-wrapper">
+                <div class=inner>
+                    <article>
+                        <div class="info bottom-left">
+                            <h3>Jersey Buoys</h3>
+                            <hr class="slidehr">
+                            <div class="desc">
+                                Client With a Webstore and payment system.
+                                <a href="#">More -></a>
+                            </div>
+                        </div>
+                        <img src="work1.png" />
+                    </article>
+
+                    <article>
+                        <div class="info bottom-left">
+                            <h3>Bowyer Realty</h3>
+                            <hr class="slidehr">
+                            <div class="desc">
+                                Realty Client, house listings. Live Geomap.
+                            </div>
+                        </div>
+                        <img src="work2.png" />
+                    </article>
+
+                    <article>
+                        <div class="info bottom-left">
+                            <h3>Lakescape Lodge</h3>
+                            <hr class="slidehr">
+                            <div class="desc">
+                                Hospitality Client, online reservations and contact forms.
+                            </div>
+                        </div>
+                        <img src="work3.png" />
+                    </article>
+
+                    <article>
+                        <div class="info bottom-left">
+                            <h3>Ladakh</h3>
+                            <hr class="slidehr">
+                            <div class="desc">
+                                Client With a Webstore
+                            </div>
+                        </div>
+                        <img src="https://farm8.staticflickr.com/7367/27980898905_72d106e501_h_d.jpg" />
+                    </article>
+
+                    <article>
+                        <div class="info bottom-left">
+                            <h3>Nubra Valley</h3>
+                            <hr class="slidehr">
+                            <div class="desc">
+                                Client With a Webstore
+                            </div>
+                        </div>
+                        <img src="https://farm8.staticflickr.com/7356/27980899895_9b6c394fec_h_d.jpg" />
+                    </article>
+                </div>
+                <!-- .inner -->
+            </div>
+            <!-- .slider-wrapper -->
+
+            <div class="slider-prev-next-control">
+                <label for=slide1></label>
+                <label for=slide2></label>
+                <label for=slide3></label>
+                <label for=slide4></label>
+                <label for=slide5></label>
+            </div>
+            <!-- .slider-prev-next-control -->
+
+            <div class="slider-dot-control">
+                <label for=slide1></label>
+                <label for=slide2></label>
+                <label for=slide3></label>
+                <label for=slide4></label>
+                <label for=slide5></label>
+            </div>
+            <!-- .slider-dot-control -->
+        </div>
+
+        <div class="breakwrapper">
+            <div class="break">
+            </div>
+            <div class="break">
+            </div>
+            <div class="break">
+            </div>
+        </div>
 
         <article id="about">
             <!-- Short Paragraph telling you about the company and their beliefs -->
@@ -65,54 +176,78 @@
                 aut magni vero quo aliquam, eligendi tempora dolor assumenda eum accusantium ipsam nesciunt corrupti
                 ab.
             </p>
-
-            <article id="work">
-                <!-- Box grid, 2x2 with displayed websites. Button in Top right for "More" work -->
-                <h2 class="workheading">
-                    Selected Work
-                </h2>
-                <button id="workmorebutton"><a href="#">More</a></button>
-                <div id="displayedwork">
-                    <div class="content">
-                        <!-- Image -->
-                        <!-- Title -->
-                        <!-- Client/Purpose -->
-                    </div>
-
-                    <div class="content">
-
-                    </div class="content">
-
-                    <div class="content">
-
-                    </div>
-
-                    <div class="content">
-
-                    </div>
-                </div>
-            </article>
-
-            <div class="break">
-                break
-            </div>
-
-
         </article>
 
+
+        <div class="breakwrapper">
+            <div class="break">
+            </div>
+            <div class="break">
+            </div>
+            <div class="break">
+            </div>
+        </div>
+
+        <div class="container">
+            <form id="contact" action="" method="post">
+                <h3>Quick Contact</h3>
+                <h4>Contact us today, and get reply with in 24 hours!</h4>
+                <fieldset>
+                    <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+
+
+        <div class="breakwrapper">
+            <div class="break">
+            </div>
+            <div class="break">
+            </div>
+            <div class="break">
+            </div>
+        </div>
+
+
+
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, possimus consequuntur nemo impedit hic maxime
+        fuga facere voluptatibus nostrum quisquam officiis nisi magnam recusandae modi obcaecati veniam natus minima
+        repudiandae.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo corrupti obcaecati minima, fugiat molestiae
+        voluptatem tempora officia facere doloremque voluptas voluptate. Perferendis repellat adipisci dolore rem
+        molestias esse culpa. Aliquam?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis illum, facilis quod velit, commodi eaque
+        voluptas dolores ea sed eligendi ab molestias sint enim nihil adipisci sapiente qui natus inventore?
+
+
+
+
+        <footer>
+            <div class="footer">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
 
 
     </div>
 </body>
 
-
-
-<body>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-    <script src="" async defer></script>
-</body>
 
 </html>
