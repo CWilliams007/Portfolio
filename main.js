@@ -69,3 +69,5 @@ angular.module('app', ['cfp.hotkeys', 'ngAnimate'])
             }
         });
     });
+
+// modal

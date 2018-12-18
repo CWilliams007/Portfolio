@@ -6,6 +6,8 @@
     Purpose: Main CSS for My Portfolio Index.
 */
 
+@import url("animate.css");
+
 @font-face {
     font-family: "overpass";
     src: url('./overpass/overpass-bold.otf')
@@ -33,23 +35,23 @@ body {
 }
 
 .breakwrapper {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    margin-top: 2px;
+    margin-top: 0px;
 }
 
 .break {
     background-image: url("cloudiness-clouds-cloudscape-814449.jpg");
-    height: 15px;
+    height: 10px;
     background-attachment: fixed;
     background-size: cover;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 .break:nth-of-type(2) {
-    width: 40%;
+    width: 100%;
     margin: 0 auto;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 /* End Main Content Structure */
@@ -106,7 +108,6 @@ h1 span {
     padding-right: 20px;
 }
 
-
 /* End Header Styles */
 
 /* Nav Styles */
@@ -144,12 +145,19 @@ nav a:active {
 /* About Styles */
 #about {
     clear: both;
+    background-color: black;
+}
+
+p {
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 40px;
 }
 
 /* End About Styles */
 /* Work Styles */
 #work {
-    clear: both;
+    background-color: black;
 }
 
 .workheading {
@@ -166,38 +174,139 @@ nav a:active {
     color: black;
 }
 
-#displayedwork {
-    width: 75%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
 .content {
     background-color: rgb(248, 235, 218);
 }
 
-#work1 {
-    height: 250px;
-    width: 350px;
-    background-image: url("Screen\ Shot\ 2018-12-14\ at\ 1.48.50\ PM.png");
-    background-size: cover;
+h1.center {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    background-color: rgb(27, 27, 27);
+    margin: 0px;
+    font-family: 'Overpass', sans-serif;
+    ;
 }
 
 
 /* End Work Styles */
+/* Certification Styles */
+#certs {
+    margin: auto auto;
+    background-color: white;
+}
+
+#certwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 55px;
+    text-align: center;
+}
+
+div#cert1,
+#cert2,
+#cert3 {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+#cert1 {
+    background-image: url("cert1.png");
+    background-attachment: initial;
+    background-size: cover;
+}
+
+#cert2 {
+    background-image: url("cert2.png");
+    background-attachment: initial;
+    background-size: cover;
+}
+
+#cert3 {
+    background-image: url("cert3.png");
+    background-attachment: initial;
+    background-size: cover;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#certwrapper a:hover {
+    color: gray;
+}
+
+/* End Certification Styles */
+/* Resume Styles */
+#resumecontact {
+    background-image: url("cloudiness-clouds-cloudscape-814449.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#resume {
+    height: 400px;
+    margin-bottom: 0px;
+}
+
+
+.resumedownload {
+    text-align: center;
+    position: relative;
+    top: 150px;
+
+}
+
+a.resumedownload:hover {
+    color: red;
+}
+
+.resumedownload h1 {
+    text-align: center;
+    margin: 0 auto;
+    width: 200px;
+    border: 2px solid black;
+}
+
+.resumedownload hr {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.resumedownload b {
+    display: block;
+    margin: 0 auto;
+}
+
 /* Footer Styles */
 
 footer {
     padding-top: 20px;
+    display: grid;
+    grid-template-columns: 85% 15%;
 }
 
 .footer {
     text-align: center;
+
 }
 
 i.fab {
     color: black;
     padding: 10px;
+}
+
+#copy {
+    font-size: .9em;
+    background: none;
+    padding-top: 5px;
+    font-weight: bold;
 }
 
 /* End Footer styles */
@@ -216,6 +325,11 @@ i.fab {
     -o-font-smoothing: antialiased;
     font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+}
+
+.contactme {
+    height: 700px;
+    margin-top: 0px;
 }
 
 .container {
@@ -239,11 +353,12 @@ i.fab {
 #contact {
     background: #F9F9F9;
     padding: 25px;
-    margin: 50px 0;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 #contact h3 {
-    color: #F96;
+    color: black;
     display: block;
     font-size: 30px;
     font-weight: 400;
@@ -296,7 +411,7 @@ fieldset {
     cursor: pointer;
     width: 100%;
     border: none;
-    background: #0CF;
+    background: black;
     color: #FFF;
     margin: 0 0 5px;
     padding: 10px;
@@ -304,7 +419,7 @@ fieldset {
 }
 
 #contact button[type="submit"]:hover {
-    background: #09C;
+    background: gray;
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
@@ -339,13 +454,17 @@ fieldset {
 /* Slideshow */
 
 /*---- NUMBER OF SLIDE CONFIGURATION ----*/
-.wrapper {
+.swrapper {
+    background-color: white;
+    padding: 10px;
     max-width: 60em;
     margin: 1em auto;
     position: relative;
+    margin-bottom: 0px;
+
 }
 
-.wrapper input {
+.swrapper input {
     display: none;
 }
 
@@ -500,34 +619,16 @@ hr.slidehr {
 }
 
 /*---- SET POSITION FOR SLIDE ----*/
-#slide1:checked~.slider-prev-next-control label:nth-child(2)::after,
-#slide2:checked~.slider-prev-next-control label:nth-child(3)::after,
-#slide3:checked~.slider-prev-next-control label:nth-child(4)::after,
-#slide4:checked~.slider-prev-next-control label:nth-child(5)::after,
-#slide5:checked~.slider-prev-next-control label:nth-child(1)::after,
-#slide2:checked~.slider-prev-next-control label:nth-child(1)::after,
-#slide3:checked~.slider-prev-next-control label:nth-child(2)::after,
-#slide4:checked~.slider-prev-next-control label:nth-child(3)::after,
-#slide5:checked~.slider-prev-next-control label:nth-child(4)::after,
-#slide1:checked~.slider-prev-next-control label:nth-child(5)::after {
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-    margin: 0;
-    line-height: 38px;
-    font-size: 3em;
-    display: block;
-    color: #777;
-}
-
+/* Contains arrow for right next button for slideshow */
 #slide1:checked~.slider-prev-next-control label:nth-child(2)::after,
 #slide2:checked~.slider-prev-next-control label:nth-child(3)::after,
 #slide3:checked~.slider-prev-next-control label:nth-child(4)::after,
 #slide4:checked~.slider-prev-next-control label:nth-child(5)::after,
 #slide5:checked~.slider-prev-next-control label:nth-child(1)::after {
-    content: "\f105";
+    content: "\25b6";
     padding-left: 15px;
+    position: relative;
+    top: 11px;
 }
 
 #slide1:checked~.slider-prev-next-control label:nth-child(2),
@@ -537,7 +638,7 @@ hr.slidehr {
 #slide5:checked~.slider-prev-next-control label:nth-child(1) {
     display: block;
     float: right;
-    margin-right: 5px;
+    margin-right: 25px;
 }
 
 #slide2:checked~.slider-prev-next-control label:nth-child(1),
@@ -550,13 +651,16 @@ hr.slidehr {
     margin-left: 5px;
 }
 
+/* Contains the arrow for the left button, prev on slideshow */
 #slide2:checked~.slider-prev-next-control label:nth-child(1)::after,
 #slide3:checked~.slider-prev-next-control label:nth-child(2)::after,
 #slide4:checked~.slider-prev-next-control label:nth-child(3)::after,
 #slide5:checked~.slider-prev-next-control label:nth-child(4)::after,
 #slide1:checked~.slider-prev-next-control label:nth-child(5)::after {
-    content: "\f104";
-    padding-left: 8px;
+    content: "\25C0";
+    padding-left: 10px;
+    position: relative;
+    top: 10px;
 }
 
 #slide1:checked~.slider-dot-control label:nth-child(1),
